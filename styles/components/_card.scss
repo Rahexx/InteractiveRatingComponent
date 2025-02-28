@@ -1,0 +1,24 @@
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 360px;
+  width: 327px;
+  padding: $space-24 $space-24 $space-32;
+  background: $gradient-card;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+
+  &--complete {
+    .card__front {
+      display: none;
+    }
+    .card__back {
+      display: block;
+    }
+  }
+
+  &__back {
+    display: none;
+  }
+}
