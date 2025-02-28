@@ -95,3 +95,50 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .rating {
+    &__icon {
+      height: 48px;
+      width: 48px;
+      margin-bottom: $space-30;
+    }
+
+    &__star {
+      height: 17px;
+      width: 16px;
+    }
+
+    &__title {
+      font-size: $text-28;
+    }
+
+    &__info {
+      margin: $space-15 0 $space-24;
+      line-height: $line-height-24;
+      font-size: $text-15;
+    }
+
+    &__form {
+      gap: $space-32;
+    }
+
+    &__label {
+      height: 51px;
+      width: 51px;
+      line-height: $line-height-51;
+    }
+
+    &__id {
+      font-size: $text-16;
+    }
+
+    &__submit {
+      height: 45px;
+      width: 341px;
+      padding: $space-15 0 $space-11;
+      letter-spacing: $letter-spacing-l;
+      font-size: $text-15;
+    }
+  }
+}

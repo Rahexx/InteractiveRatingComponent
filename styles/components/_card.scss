@@ -22,3 +22,12 @@
     display: none;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .card {
+    height: 416px;
+    width: 412px;
+    padding: $space-32 $space-40 $space-32 $space-32;
+    border-radius: 30px;
+  }
+}

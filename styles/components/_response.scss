@@ -35,3 +35,30 @@
     font-size: $text-14;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .response {
+    margin-top: $space-13;
+
+    &__img {
+      height: 108px;
+      width: 162px;
+    }
+
+    &__rates {
+      margin: $space-32 0;
+      width: 193px;
+      font-size: $text-15;
+    }
+
+    &__title {
+      font-size: $text-28;
+    }
+
+    &__text {
+      margin-top: $space-15;
+      line-height: $line-height-24;
+      font-size: $text-15;
+    }
+  }
+}
