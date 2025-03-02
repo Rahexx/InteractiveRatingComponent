@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Rahexx/InteractiveRatingComponent)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://rahexx.github.io/InteractiveRatingComponent/)
 
 ## My process
 
