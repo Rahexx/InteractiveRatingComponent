@@ -1,0 +1,33 @@
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 360px;
+  width: 327px;
+  padding: $space-24 $space-24 $space-32;
+  background: $gradient-card;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+
+  &--complete {
+    .card__front {
+      display: none;
+    }
+    .card__back {
+      display: flex;
+    }
+  }
+
+  &__back {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .card {
+    height: 416px;
+    width: 412px;
+    padding: $space-32 $space-40 $space-32 $space-32;
+    border-radius: 30px;
+  }
+}

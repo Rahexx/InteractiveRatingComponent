@@ -1,0 +1,144 @@
+.rating {
+  &__icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $space-16;
+    background: $dark-blue;
+    border-radius: 50%;
+  }
+
+  &__star {
+    display: inline-block;
+    height: 14px;
+    width: 13px;
+  }
+
+  &__title {
+    color: $white;
+    font-size: $text-24;
+    font-weight: $font-bold;
+  }
+
+  &__info {
+    margin: $space-10 0 $space-24;
+    color: $light-grey;
+    line-height: $line-height-22;
+    font-size: $text-14;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $space-24;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: $line-height-42;
+    background: $dark-blue;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: $white;
+
+      .rating__id {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  &__id {
+    color: $light-grey;
+    letter-spacing: $letter-spacing-s;
+    line-height: $line-height-24;
+    font-size: $text-14;
+    font-weight: $font-bold;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__radio {
+    display: none;
+  }
+
+  &__submit {
+    height: 45px;
+    width: 270px;
+    padding: $space-14 0;
+    border: none;
+    background: $orange;
+    color: $very-dark-blue;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-m;
+    font-size: $text-14;
+    font-weight: $font-bold;
+    border-radius: 22.5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: $white;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .rating {
+    &__icon {
+      height: 48px;
+      width: 48px;
+      margin-bottom: $space-30;
+    }
+
+    &__star {
+      height: 17px;
+      width: 16px;
+    }
+
+    &__title {
+      font-size: $text-28;
+    }
+
+    &__info {
+      margin: $space-15 0 $space-24;
+      line-height: $line-height-24;
+      font-size: $text-15;
+    }
+
+    &__form {
+      gap: $space-32;
+    }
+
+    &__label {
+      height: 51px;
+      width: 51px;
+      line-height: $line-height-51;
+    }
+
+    &__id {
+      font-size: $text-16;
+    }
+
+    &__submit {
+      height: 45px;
+      width: 341px;
+      padding: $space-15 0 $space-11;
+      letter-spacing: $letter-spacing-l;
+      font-size: $text-15;
+    }
+  }
+}

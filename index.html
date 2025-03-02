@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link href="./css/main.css" rel="stylesheet" />
+  </head>
+  <body class="container">
+    <main class="card">
+      <section class="card__front rating">
+        <div class="rating__icon">
+          <img
+            src="./images/icon-star.svg"
+            alt="icon of star"
+            class="rating__star"
+          />
+        </div>
+        <h1 class="rating__title">How did we do?</h1>
+        <p class="rating__info">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form class="rating__form">
+          <div class="rating__options">
+            <label class="rating__label" for="rating-1">
+              <input
+                type="radio"
+                id="rating-1"
+                name="rating"
+                value="1"
+                class="rating__radio"
+              />
+              <span class="rating__id">1</span>
+            </label>
+            <label class="rating__label" for="rating-2">
+              <input
+                type="radio"
+                id="rating-2"
+                name="rating"
+                value="2"
+                class="rating__radio"
+              />
+              <span class="rating__id">2</span>
+            </label>
+            <label class="rating__label" for="rating-3">
+              <input
+                type="radio"
+                id="rating-3"
+                name="rating"
+                value="3"
+                class="rating__radio"
+              />
+              <span class="rating__id">3</span>
+            </label>
+            <label class="rating__label" for="rating-4">
+              <input
+                type="radio"
+                id="rating-4"
+                name="rating"
+                value="4"
+                class="rating__radio"
+              />
+              <span class="rating__id">4</span>
+            </label>
+            <label class="rating__label" for="rating-5">
+              <input
+                type="radio"
+                id="rating-5"
+                name="rating"
+                value="5"
+                class="rating__radio"
+              />
+              <span class="rating__id">5</span>
+            </label>
+          </div>
+          <button class="rating__submit" type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="card__back response">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="mobile phone with coin and credit card"
+          class="response__img"
+        />
+        <p class="response__rates">
+          You selected <span class="response__choice">0</span> out of 5
+        </p>
+        <h2 class="response__title">Thank you!</h2>
+        <p class="response__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
